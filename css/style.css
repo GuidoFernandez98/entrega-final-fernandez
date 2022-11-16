@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(113deg, #f2ecde, #000000, #fffffe);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer";
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.header {
+  display: grid;
+  grid-area: "header";
+}
+
+.lista {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style: none;
+  color: black;
+  align-items: center;
+}
+
+.lista a {
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/BearstoreLogo.jpg);
+  border-radius: 50%;
+  border: solid black 2px;
+}
+
+.main {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: monospace;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 10px;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+.mainUsuario {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.rectangle {
+  height: 70vh;
+  width: 75%;
+  background-color: #d9d9d9;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: -1px 5px 13px 1px rgba(0, 0, 0, 0.43);
+}
+
+.textoNos {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mainUsuario {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.rectangle {
+  height: 70vh;
+  width: 75%;
+  background-color: #d9d9d9;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: -1px 5px 13px 1px rgba(0, 0, 0, 0.43);
+}
+
+.botonNav {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  color: #000000;
+  background-color: #F2ECDE;
+  padding: 1px 30px;
+  border: solid #000000 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 50px;
+  transition: 169ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.botonNav:hover {
+  transition: 169ms;
+  padding: 10px 50px;
+  transform: translateY(0px);
+  background-color: #d9d9d9;
+  border: solid 2px black;
+}
+
+.btnRegistro {
+  font-family: Roboto, sans-serif;
+  font-weight: 186;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #d9d9d9;
+  padding: 7px 30px;
+  border: solid #000000 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 50px;
+  transition: 169ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btnRegistro:hover {
+  transition: 169ms;
+  padding: 10px 50px;
+  transform: translateY(0px);
+  background-color: #d9d9d9;
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
+
+.cuadrado {
+  height: 500px;
+  width: 850px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #d9d9d9;
+  box-shadow: -1px 5px 13px 1px rgba(0, 0, 0, 0.43);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.boton {
+  font-family: Roboto, sans-serif;
+  font-weight: 186;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #d9d9d9;
+  padding: 7px 30px;
+  border: solid #000000 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 7px 8px 8px;
+  transition: 169ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.boton:hover {
+  transition: 169ms;
+  padding: 10px 20px;
+  transform: translateY(0px);
+  background-color: blueviolet;
+  border: solid 2px #000000;
+}
+
+.boton a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.rectangulo {
+  width: 500px;
+  height: 100px;
+  background: #d9d9d9;
+  box-shadow: 1px 13px 32px 9px rgba(0, 0, 0, 0.47);
+  background-image: url(../img/fabric.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d9d9d9;
+}
+
+.titleForm {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 70vh;
+  align-items: center;
+}
+
+.titleForm a {
+  color: black;
+  text-decoration: none;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.primerCard {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 500px;
+  background-image: url(../img/primercard.jpg);
+  border-radius: 20px;
+}
+
+.imgCard1 {
+  height: 500px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.segundCard {
+  display: flex;
+  justify-content: end;
+  width: 250px;
+  height: 500px;
+  background-image: url(../img/segundcard.jpg);
+  border-radius: 20px;
+}
+
+.imgCard2 {
+  height: 500px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.tercerCard {
+  display: flex;
+  justify-content: start;
+  width: 250px;
+  height: 500px;
+  background-image: url(../img/tercercard.jpg);
+  border-radius: 20px;
+}
+
+.imgCard3 {
+  height: 500px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.pieFoto {
+  font-size: large;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
